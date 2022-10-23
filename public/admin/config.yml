@@ -31,9 +31,13 @@ collections:
       - { label: "Testimonial", name: "testimonial", widget: "text" }
   - label: tests
     name: Tests
-    widget: list
-    allow_add: true
-    file: "content/tests.json"
-    fields:
-      - { label: "Client", name: "client", widget: "string" }
-      - { label: "Testimonial", name: "testimonial", widget: "text" }
+    description: "Testimonials in array"
+    files:
+      - label: "Tests File"
+        name: "testsFile"
+        file: "content/tests.json"
+        allow_add: true
+        widget: list
+        fields:
+          - { label: "Client", name: "client", widget: "string" }
+          - { label: "Testimonial", name: "testimonial", widget: "text" }
