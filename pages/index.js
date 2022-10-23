@@ -1,13 +1,13 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-// import { body, attributes as homeData } from "../content/home.md";
-// import { attributes as testimonials } from "../content/testimonials";
+import { react as HomeContent } from "../content/home.md";
+//import { attributes as testimonials } from "../content/testimonials";
 
 export default function Home() {
-  // console.log(testimonials);
-  // console.log(homeData);
-  // console.log(body);
+  console.log(JSON.stringify(HomeContent));
+  console.log(HomeContent);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -16,9 +16,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Link href="/pos-systems">POS Systems</Link>
-      <h1></h1>
-
-      <p></p>
+      <h1 style={{ color: "red" }}>test</h1>
+      <p style={{ color: "red" }}>
+        <HomeContent />
+      </p>
     </div>
   );
 }

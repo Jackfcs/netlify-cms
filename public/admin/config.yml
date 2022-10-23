@@ -3,6 +3,7 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: public/img
 public_folder: img
+format: json
 collections:
   - label: "Pages"
     name: "pages"
@@ -10,6 +11,7 @@ collections:
       - label: "Home"
         name: "home"
         file: "content/home.md"
+        format: frontmatter
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
@@ -17,6 +19,7 @@ collections:
       - label: "POS System"
         name: "pos-system"
         file: "content/pos-system.md"
+        format: frontmatter
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
