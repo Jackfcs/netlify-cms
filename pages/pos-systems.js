@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import { attributes } from "../content/pos-system.md";
 
 export default function POS() {
+  console.log(attributes);
   return (
     <div className={styles.container}>
       <Head>

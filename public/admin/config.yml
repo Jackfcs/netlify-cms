@@ -14,9 +14,16 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Body", name: "body", widget: "markdown" }
-          - label: "Cats"
-            name: "cats"
-            widget: list
-            fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+      - label: "POS System"
+        name: "pos-system"
+        file: "content/pos-system.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Body", name: "body", widget: "markdown" }
+  - name: "Testimonials"
+    label: "testimonials"
+      widget: list
+      fields:
+        - { label: "Client", name: "client", widget: "string" }
+        - { label: "Testimonial", name: "testimonial", widget: "text" }
