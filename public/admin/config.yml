@@ -3,14 +3,13 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: public/img
 public_folder: img
-format: json
 collections:
   - label: "Pages"
     name: "pages"
     files:
       - label: "Home"
         name: "home"
-        file: "content/home.json"
+        file: "content/home.md"
         format: frontmatter
         fields:
           - { label: "Title", name: "title", widget: "string" }
