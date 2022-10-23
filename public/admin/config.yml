@@ -10,7 +10,7 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "content/home.md"
+        file: "content/home.json"
         format: frontmatter
         fields:
           - { label: "Title", name: "title", widget: "string" }
