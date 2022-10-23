@@ -5,9 +5,6 @@ import Link from "next/link";
 //import { attributes as testimonials } from "../content/testimonials";
 
 export default function Home() {
-  console.log(JSON.stringify(HomeContent));
-  console.log(HomeContent);
-
   return (
     <div className={styles.container}>
       <Head>
