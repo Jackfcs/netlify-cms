@@ -4,9 +4,9 @@ backend:
 media_folder: public/img
 public_folder: img
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
+  - label: "Pages"
+    name: "pages"
+    fields:
       - label: "Home"
         name: "home"
         file: "content/home.md"
@@ -21,9 +21,10 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Body", name: "body", widget: "markdown" }
-  - name: "Testimonials"
-    label: "testimonials"
-      widget: list
-      fields:
-        - { label: "Client", name: "client", widget: "string" }
-        - { label: "Testimonial", name: "testimonial", widget: "text" }
+  - label: "testimonials"
+    name: "Testimonials"
+    widget: list
+    create: true
+    fields:
+      - { label: "Client", name: "client", widget: "string" }
+      - { label: "Testimonial", name: "testimonial", widget: "text" }
