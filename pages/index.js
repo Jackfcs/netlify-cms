@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import { react as HomeContent } from "../content/home.md";
+// import { react as HomeContent } from "../content/home.md";
 //import { attributes as testimonials } from "../content/testimonials";
 
 export default function Home() {
@@ -17,9 +17,7 @@ export default function Home() {
       </Head>
       <Link href="/pos-systems">POS Systems</Link>
       <h1 style={{ color: "red" }}>test</h1>
-      <p style={{ color: "red" }}>
-        <HomeContent />
-      </p>
+      <p style={{ color: "red" }}>{/* <HomeContent /> */}</p>
     </div>
   );
 }
