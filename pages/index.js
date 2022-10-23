@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { body, attributes as homeData } from "../content/home.md";
-import { attributes as testimonials } from "../content/testimonials.md";
+import { attributes as testimonials } from "../content/testimonials";
 
 export default function Home() {
   console.log(testimonials);

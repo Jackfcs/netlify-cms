@@ -6,7 +6,7 @@ public_folder: img
 collections:
   - label: "Pages"
     name: "pages"
-    fields:
+    files:
       - label: "Home"
         name: "home"
         file: "content/home.md"
@@ -23,8 +23,9 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
   - label: "testimonials"
     name: "Testimonials"
-    widget: list
+    folder: "content/testimonials"
     create: true
+    identifier_field: client
     fields:
       - { label: "Client", name: "client", widget: "string" }
       - { label: "Testimonial", name: "testimonial", widget: "text" }
