@@ -36,8 +36,10 @@ collections:
       - label: "Tests File"
         name: "testsFile"
         file: "content/tests.json"
-        create: true
-        widget: list
         fields:
-          - { label: "Client", name: "client", widget: "string" }
-          - { label: "Testimonial", name: "testimonial", widget: "text" }
+          - label: "Tests List"
+            name: "testsList"
+            create: true
+            fields:
+              - { label: "Client", name: "client", widget: "string" }
+              - { label: "Testimonial", name: "testimonial", widget: "text" }
