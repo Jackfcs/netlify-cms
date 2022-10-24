@@ -2,10 +2,10 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { react as HomeContent } from "../content/home.md";
-import testList from "../content/testimonials.json";
+import mainTestimonials from "../content/testimonials.json";
 
 export default function Home() {
-  const tests = testList?.testsList;
+  const testimonials = mainTestimonials?.mainTestimonials;
 
   return (
     <div className={styles.container}>
@@ -20,10 +20,10 @@ export default function Home() {
         <HomeContent />
       </h3>
 
-      {tests && (
+      {testimonials && (
         <>
           <h4>Testimonials</h4>
-          {tests.map(({ client, testimonial }, i) => (
+          {testimonials.map(({ client, testimonial }, i) => (
             <div key={i} style={{ paddingBottom: "10px" }}>
               <p>{client}</p>
               <p>{testimonial}</p>

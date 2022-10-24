@@ -12,14 +12,12 @@ collections:
         file: "content/home.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Body", name: "body", widget: "markdown" }
       - label: "POS System"
         name: "pos-system"
         file: "content/pos-system.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Body", name: "body", widget: "markdown" }
   - label: "Testimonials"
     name: "testimonials"
@@ -36,3 +34,13 @@ collections:
             fields:
               - { label: "Client", name: "client", widget: "string" }
               - { label: "Testimonial", name: "testimonial", widget: "text" }
+  - label: "Contact"
+    name: "contact"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/contact.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Publish Date", name: "date", widget: "datetime" }
+          - { label: "Body", name: "body", widget: "markdown" }
