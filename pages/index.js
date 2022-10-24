@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { react as HomeContent } from "../content/home.md";
-import testList from "../content/tests.json";
+import testList from "../content/testimonials.json";
 
 export default function Home() {
   const tests = testList.testsList;
