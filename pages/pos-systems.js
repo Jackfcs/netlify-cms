@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
-import { attributes } from "../content/pos-system.md";
+import { attributes, react as POSContent } from "../content/pos-system.md";
 
 export default function POS() {
   console.log(attributes);
@@ -14,6 +14,8 @@ export default function POS() {
       </Head>
       <Link href="/">Home</Link>
       <h1>POS Systems</h1>
+
+      <POSContent />
     </div>
   );
 }

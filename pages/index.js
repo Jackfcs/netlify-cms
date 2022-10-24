@@ -1,13 +1,12 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-// import { react as HomeContent } from "../content/home.md";
-//import { attributes as testimonials } from "../content/testimonials";
+import { react as HomeContent } from "../content/home.md";
 import testList from "../content/tests.json";
 
 export default function Home() {
   const tests = testList.testsList;
-  console.log(tests);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -16,9 +15,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Link href="/pos-systems">POS Systems</Link>
-      <h1 style={{ color: "red" }}>test</h1>
-      <p style={{ color: "red" }}>{/* <HomeContent /> */}</p>
+      <h1>test</h1>
+      <h3>
+        <HomeContent />
+      </h3>
       <>
+        <h4>Testimonials</h4>
         {tests.map(({ client, testimonial }, i) => (
           <div key={i} style={{ paddingBottom: "10px" }}>
             <p>{client}</p>
