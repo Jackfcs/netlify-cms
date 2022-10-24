@@ -1,1 +1,12 @@
-{}
+{
+  "mainTestimonials": [
+    {
+      "client": "Brat",
+      "testimonial": "Eposability help us get the most out of Lightspeed, it's transformed our restaurant and staff experience. "
+    },
+    {
+      "client": "Test Client",
+      "testimonial": "This is a testimonial from the test client"
+    }
+  ]
+}
