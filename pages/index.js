@@ -5,7 +5,7 @@ import { react as HomeContent } from "../content/home.md";
 import testList from "../content/testimonials.json";
 
 export default function Home() {
-  const tests = testList.testsList;
+  const tests = testList?.testsList;
 
   return (
     <div className={styles.container}>
@@ -19,15 +19,18 @@ export default function Home() {
       <h3>
         <HomeContent />
       </h3>
-      <>
-        <h4>Testimonials</h4>
-        {tests.map(({ client, testimonial }, i) => (
-          <div key={i} style={{ paddingBottom: "10px" }}>
-            <p>{client}</p>
-            <p>{testimonial}</p>
-          </div>
-        ))}
-      </>
+
+      {tests && (
+        <>
+          <h4>Testimonials</h4>
+          {tests.map(({ client, testimonial }, i) => (
+            <div key={i} style={{ paddingBottom: "10px" }}>
+              <p>{client}</p>
+              <p>{testimonial}</p>
+            </div>
+          ))}
+        </>
+      )}
     </div>
   );
 }
