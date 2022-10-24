@@ -1,4 +1,10 @@
 {
   "client": "mcds",
-  "testimonial": "lovin"
+  "testimonial": "lovin",
+  "testsList": [
+    {
+      "client": "mccyDs",
+      "testimonial": "Golden Arches"
+    }
+  ]
 }
