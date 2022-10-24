@@ -3,8 +3,11 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 // import { react as HomeContent } from "../content/home.md";
 //import { attributes as testimonials } from "../content/testimonials";
+import testList from "../content/tests.json";
 
 export default function Home() {
+  const tests = testList.testsList;
+  console.log(tests);
   return (
     <div className={styles.container}>
       <Head>
@@ -15,6 +18,14 @@ export default function Home() {
       <Link href="/pos-systems">POS Systems</Link>
       <h1 style={{ color: "red" }}>test</h1>
       <p style={{ color: "red" }}>{/* <HomeContent /> */}</p>
+      <>
+        {tests.map(({ client, testimonial }, i) => (
+          <div key={i} style={{ paddingBottom: "10px" }}>
+            <p>{client}</p>
+            <p>{testimonial}</p>
+          </div>
+        ))}
+      </>
     </div>
   );
 }
