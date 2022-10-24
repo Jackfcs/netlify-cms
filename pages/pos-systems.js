@@ -4,7 +4,8 @@ import styles from "../styles/Home.module.css";
 import { attributes, react as POSContent } from "../content/pos-system.md";
 
 export default function POS() {
-  console.log(attributes);
+  const { title } = attributes;
+
   return (
     <div className={styles.container}>
       <Head>
@@ -16,7 +17,7 @@ export default function POS() {
         <Link href="/">Home</Link>{" "}
       </span>
       <Link href="/pos-systems">POS Systems</Link>
-      <h1>POS Systems</h1>
+      <h1>{title}</h1>
 
       <POSContent />
     </div>

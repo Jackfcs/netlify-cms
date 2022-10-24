@@ -1,11 +1,12 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import { react as HomeContent } from "../content/home.md";
+import { attributes, react as HomeContent } from "../content/home.md";
 import mainTestimonials from "../content/testimonials.json";
 
 export default function Home() {
   const testimonials = mainTestimonials?.mainTestimonials;
+  const { title } = attributes;
 
   return (
     <div className={styles.container}>
@@ -19,7 +20,7 @@ export default function Home() {
       </span>
       <Link href="/pos-systems">POS Systems</Link>
 
-      <h1>test</h1>
+      <h1>{title}</h1>
       <h3>
         <HomeContent />
       </h3>
