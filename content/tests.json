@@ -9,6 +9,10 @@
     {
       "client": "Pizza Express",
       "testimonial": "Love pizzas"
+    },
+    {
+      "client": "KFC",
+      "testimonial": "gimme chicken"
     }
   ]
 }
