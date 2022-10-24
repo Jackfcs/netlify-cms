@@ -27,7 +27,7 @@ collections:
     files:
       - label: "Testimonials"
         name: "testimonials"
-        file: "content/tests.json"
+        file: "content/testimonials.json"
         fields:
           - label: "Main Testimonials"
             name: "mainTestimonials"
